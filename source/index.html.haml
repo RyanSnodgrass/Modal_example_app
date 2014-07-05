@@ -1,0 +1,64 @@
+.overlay		
+	.small-11.medium-9.large-6.small-centered.columns
+		.modal
+			.row
+				%form
+					.row
+						.small-11.columns
+						.small-1.columns
+							%a.close-reveal-modal ×
+					.row
+						.small-9.small-centered.columns
+							%input{ type: "text"}
+							%br
+					.row
+						.small-9.small-centered.columns
+							%input{ type: "text"}
+							%br
+					.row
+						.small-6.small-centered.columns
+							.button.success.expand Commit
+
+.top-bar
+	%ul.title-area
+		%li.name
+			%h1
+				%a Modal Example
+
+
+= image_tag('top_banner_triangles.jpg')
+.row
+	.medium-4.columns
+		%h3 Header 1
+		%p Artisan readymade biodiesel, next level dreamcatcher scenester vegan. Ennui mlkshk cray, flexitarian mumblecore cliche freegan. Intelligentsia Pitchfork tattooed photo booth whatever pork belly. Blog selvage sustainable bicycle rights stumptown.
+
+	.medium-4.columns
+		%h3 Header 2
+		%p Godard Neutra aute, voluptate retro selfies squid ut Tonx flannel cliche. Kickstarter photo booth assumenda, meggings actually selvage slow-carb sapiente banh mi irure sustainable. Actually High Life laboris disrupt irure vero. Consectetur incididunt occaecat Wes Anderson. 
+		
+	.medium-4.columns
+		%h3 Header 3
+		%p Odd Future deep v letterpress VHS, occupy cardigan art party fashion axe slow-carb ugh. Kickstarter post-ironic narwhal ennui photo booth normcore, street art Pinterest High Life asymmetrical occupy actually food truck. 
+.row
+	.small-5.small-centered.columns
+		.button.expand#blue-button I want to see the modal
+= image_tag('bottom_banner_triangles.jpg')
+.row
+	.medium-6.columns
+		%h3 More stuff down here
+		%p Post-ironic paleo sriracha readymade leggings, VHS fixie ethnic polaroid roof party master cleanse street art fashion axe Marfa. Dreamcatcher Intelligentsia chillwave, crucifix Etsy food truck next level. Ennui Intelligentsia flannel next level Kickstarter chillwave. Meggings keytar sartorial fixie vegan. Skateboard messenger bag wayfarers PBR&B church-key, Carles chambray jean shorts YOLO 90's photo booth artisan small batch sustainable. Pitchfork fanny pack gastropub Etsy Tonx. Banjo locavore twee keffiyeh ugh, direct trade Etsy trust fund lomo vinyl Truffaut DIY.
+	.medium-3.columns
+		%h3 Extra bits
+		%p American Apparel single-origin coffee selfies pop-up, tousled Helvetica actually.
+		.button link
+	.medium-3.columns
+		%h3 Other Extras
+		%p American Apparel single-origin coffee selfies pop-up, tousled Helvetica actually.
+		.button link
+
+:javascript
+	$('#blue-button').on('click', function() {
+		$('.overlay').fadeIn('fast');
+	});
+
+
